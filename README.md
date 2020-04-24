@@ -43,6 +43,17 @@ If you don't have the Symfony binary installed, run `php -S localhost:8000 -t pu
 to use the built-in PHP web server or [configure a web server][3] like Nginx or
 Apache to run the application.
 
+Building a container
+--------------------
+
+You can use the `pack` CLI to package this application into an OCI compliant container image using Cloud Native Buildpacks.
+
+```bash
+pack build -b paketo-buildpacks/php -e APP_ENV=prod <DOCKER_TAG>
+```
+
+The application will be packaged into a container image and stored in your local docker Daemon at <DOCKER_TAG>.
+
 Tests
 -----
 
