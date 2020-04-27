@@ -1,6 +1,6 @@
 php:
   webdirectory: 'public'
-  webserver: 'php-server'
+  webserver: 'httpd'
 composer:
   # this allows you to specify a version constaint for the `php` dependency
   # any valid semver constaints (e.g. 1.* and 1.10.*) are also acceptable
